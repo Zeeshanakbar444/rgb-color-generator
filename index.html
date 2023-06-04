@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="h1">input your color value</h1>
+        <form  onsubmit="colorGenerater() ; return false">
+            <label> RED: <input type="number" required id="red" placeholder="0-255"></label> <br>
+            <label> GREEN: <input type="number" required id="green" placeholder="0-255"></label> <br>
+            <label> BLUE: <input type="number" required id="blue" placeholder="0-255"></label><br>
+            <div class="button">
+                <button type="submit">Generte Color</button>
+            </div>
+        </form>
+        <h1 class="h1">get your color</h1>
+        <div class="div" id="div">
+
+        </div>
+    </div> <!--   mian -->
+
+
+    <div class="foter">
+        <div class="h1">
+            <h1>Get your color values</h1>
+        </div>
+        <div class="div_h1">
+            <h1 class="redVal"></h1>
+            <h1 class="greenVal"></h1>
+            <h1 class="blueVal"></h1>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
